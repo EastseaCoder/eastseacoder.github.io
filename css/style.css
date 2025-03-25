@@ -72,7 +72,7 @@ button:focus {
 
 /* Header */
 .header {
-  background-color: #050a13;
+  background-color: transparent;
   position: fixed;
   top: 0;
   width: 100%;
@@ -81,6 +81,9 @@ button:focus {
   justify-content: space-between;
   align-items: center;
   z-index: 1;
+}
+.header__black {
+  background-color: var(--color-black);
 }
 .header__logo {
   display: flex;
@@ -243,6 +246,10 @@ button:focus {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.38);
+  transition: box-shadow 300ms ease-in;
+}
+.skills-container:hover {
+  box-shadow: 8px 16px 16px rgba(0, 0, 0, 0.38);
 }
 .skills__title {
   color: var(--color-accent);
@@ -410,7 +417,11 @@ button:focus {
 .testimonial__bubble {
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+  transition: box-shadow 300ms ease;
+}
+.testimonial__bubble:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 16px;
 }
 
 .testimonial__bubble__name {
