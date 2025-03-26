@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', () => {
+  handleArrowHide();
+});
+
 function handleDarkMode() {
   // Header에 페이지 아래로 스크롤시 다크 스타일링 적용
   const header = document.querySelector('.header');
@@ -36,7 +40,21 @@ function handleHomeOpacity() {
   }
 }
 
-document.addEventListener('scroll', () => {
+function handleArrowHide() {
+  // Arrow up버튼을 아래로 스크롤시 투명하게 처리함
+  const arrow = document.querySelector('.arrow-up');
+  const scrollY = window.scrollY;
+  const homeHeight = home.offsetHeight;
+  if (scrollY >= homeHeight / 2) {
+    arrow.classList.remove('arrow-hide');
+  } else {
+    arrow.classList.add('arrow-hide');
+  }
+}
+
+document.addEventListener('scroll', (e) => {
+  e.preventDefault();
   handleDarkMode();
   handleHomeOpacity();
+  handleArrowHide();
 });
