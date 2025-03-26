@@ -146,6 +146,7 @@ button:focus {
   padding: 5rem 1rem;
   padding-top: 7rem;
   text-align: center;
+  transition: all 1s linear;
 }
 .home__avatar {
   width: 250px;
