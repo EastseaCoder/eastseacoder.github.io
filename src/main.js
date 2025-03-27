@@ -1,3 +1,4 @@
+'use strict';
 document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('scroll', (e) => {
     handleDarkMode();
