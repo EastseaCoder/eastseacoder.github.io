@@ -83,6 +83,7 @@ function setupMobileMenu() {
 
   if (!menuBtn) {
     const btn = document.createElement('button');
+    btn.setAttribute('aria-label', 'navigation menu toggle');
     btn.classList.add('menu__Btn');
     btn.innerHTML = `<i class="fa-solid fa-bars fa-lg"></i>`;
     headerContainer.appendChild(btn);
