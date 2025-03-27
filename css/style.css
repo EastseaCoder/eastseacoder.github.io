@@ -50,7 +50,7 @@ button {
 }
 
 button:focus {
-  outline: 1px solid var(--color-accent);
+  outline: 1px solid transparent;
 }
 /* Common */
 .section {
@@ -101,12 +101,15 @@ button:focus {
 .header__menu {
   display: flex;
   gap: 4px;
+  align-items: center;
 }
 .header__menu__item {
   position: relative;
   padding: 8px 16px;
   font-size: 14px;
+  white-space: nowrap;
 }
+
 /* .header__menu__item:hover {
   border-bottom: 1px solid var(--color-accent);
 } */
@@ -481,9 +484,6 @@ button:focus {
   .section__title__description {
     font-size: 1rem;
   }
-  /* .header {
-    flex-direction: column;
-  } */
   #home {
     padding-bottom: 3rem;
   }
@@ -501,6 +501,22 @@ button:focus {
     gap: 1rem;
     text-align: center;
   }
+
+  .header__logo {
+    width: 100%;
+  }
+  .header__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu__Btn {
+    color: white;
+    cursor: pointer;
+  }
+
   .header__nav {
     width: 100%;
   }
@@ -539,4 +555,13 @@ button:focus {
     bottom: 1.5rem;
     right: 1.5rem;
   }
+}
+
+/* hidden nav__bar */
+.hidden {
+  display: none;
+}
+
+.active {
+  display: block;
 }
