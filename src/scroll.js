@@ -15,7 +15,7 @@ function scrollToTarget(target) {
 
   targetElement.scrollIntoView({
     behavior: 'smooth',
-    block: 'center',
+    block: 'start',
   });
 }
 
