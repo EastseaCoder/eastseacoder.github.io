@@ -43,6 +43,7 @@
       src="/my_portfolio/src/project_soultion.js"
       defer
     ></script>
+    <script type="module" src="src/scroll.js" defer></script>
   </head>
   <body>
     <!-- Header -->
@@ -55,21 +56,42 @@
       </div>
       <nav class="header__nav">
         <ul class="header__menu">
-          <li><a class="header__menu__item active" href="#home">Home</a></li>
-          <li><a class="header__menu__item" href="#About">About</a></li>
-          <li><a class="header__menu__item" href="#skills">Skills</a></li>
-          <li><a class="header__menu__item" href="#work">MyWork</a></li>
           <li>
-            <a class="header__menu__item" href="#testimonial">Testimonial</a>
+            <a class="header__menu__item" href="#home" data-id="home">Home</a>
           </li>
-          <li><a class="header__menu__item" href="#contact">Contact</a></li>
+          <li>
+            <a class="header__menu__item" href="#About" data-id="about"
+              >About</a
+            >
+          </li>
+          <li>
+            <a class="header__menu__item" href="#skills" data-id="skills"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a class="header__menu__item" href="#work" data-id="work">MyWork</a>
+          </li>
+          <li>
+            <a
+              class="header__menu__item"
+              href="#testimonial"
+              data-id="testimonial"
+              >Testimonial</a
+            >
+          </li>
+          <li>
+            <a class="header__menu__item" href="#contact" data-id="contact"
+              >Contact</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
     <!-- Main -->
     <main>
       <!-- Home -->
-      <section id="home">
+      <section id="home" data-id="home">
         <div class="home__container">
           <img
             class="home__avatar"
@@ -87,7 +109,7 @@
         </div>
       </section>
       <!-- About -->
-      <section id="About" class="section max-container">
+      <section id="About" class="section max-container" data-id="about">
         <h2 class="section__title">About me</h2>
         <p class="section__title__description">
           私は1年間L&Fで勤務した後、キャリアの方向性を模索するために製造業の大手企業に転職活動をしました。その後、建設の日雇い作業や引越し・清掃作業、そしてスーパーでのアルバイトを経験しました。これらの仕事を通じて、問題解決能力、協力能力、そしてコミュニケーション能力を培うことができました。これらの経験は、自分を知り、どんな人間であるのかを深く理解する貴重な時間となりました。私が実際に求めていたのは、ただ働くだけでなく、自分自身を成長させ、挑戦し続ける環境であることに気づきました。その結果、2025年に入ってから、開発の道に進むことを決意し、フロントエンドエンジニアとしてのスキルを独学で学びながら、実践的なプロジェクトにも取り組んでいます。
@@ -123,7 +145,7 @@
         </ul>
       </section>
       <!-- Skills -->
-      <section id="skills" class="section">
+      <section id="skills" class="section" data-id="skills">
         <div class="max-container">
           <h1 class="section__title">My Skills</h1>
           <p class="section__title__description">skills&Attribute</p>
@@ -205,7 +227,7 @@
         </div>
       </section>
       <!-- Work -->
-      <section id="work" class="section">
+      <section id="work" class="section" data-id="work">
         <div class="max-container">
           <h2 class="section__title">My work</h2>
           <p class="section__title__description">Projects</p>
@@ -272,7 +294,11 @@
         </div>
       </section>
       <!-- Testimonials -->
-      <section id="testimonial" class="section max-container">
+      <section
+        id="testimonial"
+        class="section max-container"
+        data-id="testimonial"
+      >
         <h2 class="section__title">Testimonial</h2>
         <p class="section__title__description">皆さんからの声</p>
         <ul class="testimonials">
@@ -331,12 +357,12 @@
       <!-- Arrow up -->
       <aside>
         <a class="arrow-up" href="#home" title="back to top">
-          <i class="fa-solid fa-arrow-up"></i
+          <i class="fa-solid fa-arrow-up arrow"></i
         ></a>
       </aside>
     </main>
     <!-- Footer -->
-    <footer id="contact" class="section">
+    <footer id="contact" class="section" data-id="contact">
       <div class="max-container">
         <h2 class="section__title">Let&#39;s talk</h2>
         <p class="section__title__description">kjh140611@naver.com</p>
