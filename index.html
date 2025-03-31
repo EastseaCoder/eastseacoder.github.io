@@ -12,6 +12,8 @@
       href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Noto+Sans+JP:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
+    <!-- Typeit -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <!-- SEO -->
     <title>Donghae&#39;s portfolio</title>
     <meta
@@ -50,7 +52,8 @@
       defer
     ></script>
     <!-- <script type="module" src="src/scroll.js" defer></script> -->
-    <script type="module" src="src/scroll_soultion.js"></script>
+    <script type="module" src="src/scroll_soultion.js" defer></script>
+    <script type="module" src="src/type.js" defer></script>
   </head>
   <body>
     <!-- Header -->
@@ -101,23 +104,26 @@
     <main>
       <!-- Home -->
       <section id="home" data-id="home">
-        <div class="home__container">
+        <div class="home__container max-container">
           <img
             class="home__avatar"
             src="/my_portfolio/img/김동해_배경제거.png"
             alt="Donhae's profile"
           />
-          <h2 class="home__title">
-            Hello <br />I&#39;m
-            <strong class="home__title--strong">Dream Coder</strong>,DongHae
-          </h2>
-          <p class="home__description">
-            フロントエンドエンジニアを目指しているドンヘです。独学でスキルを磨きながら、実践に取り組んでいます。
-          </p>
-          <a class="home__contact__btn" href="#contact">Contact</a>
+          <div>
+            <h2 class="home__title" aria-label="Hello I'm Dream Coder DongHae">
+              Hello <br />I&#39;m
+              <strong class="home__title--strong">Dream Coder</strong>,DongHae
+            </h2>
+            <p class="home__description">
+              フロントエンドエンジニアを目指しているドンヘです。独学でスキルを磨きながら、実践に取り組んでいます。
+            </p>
+            <a class="home__contact__btn" href="#contact">Contact</a>
+          </div>
         </div>
       </section>
       <!-- About -->
+
       <section id="About" class="section max-container" data-id="about">
         <h2 class="section__title">About me</h2>
         <p class="section__title__description">
@@ -153,6 +159,7 @@
           </li>
         </ul>
       </section>
+
       <!-- Skills -->
       <section id="skills" class="section" data-id="skills">
         <div class="max-container">
